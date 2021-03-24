@@ -5,13 +5,19 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    eNama: TEdit;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure eNamaChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -29,6 +35,21 @@ implementation
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+     ShowMessage('Hello '+eNama.text);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.eNamaChange(Sender: TObject);
 begin
 
 end;
